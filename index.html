@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio website of full stack web and blockchain developer Hisamitsu Teru"
+    />
+    <meta
+      name="keywords"
+      content="fullstack developer, blockchain developer, fullstack, portfolio, 
+			personal website, html, css, javascript, react, node, solidity, rust, web3"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Hisamitsu Teru</title>
+    <link rel="icon" href="avatar.png" />
+    <script defer="defer" src="bundle.js"></script>
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body class="body-light">
+    <header id="top">
+      <a
+        class="icon-border header-title"
+        href="https://blockchaindev91.github.io"
+        >HT</a
+      >
+      <nav>
+        <ul>
+          <li><a href="#experience" class="link">Experience</a></li>
+          <li><a href="#project" class="link">Projects</a></li>
+          <li><a href="#stack" class="link">Tech Stack</a></li>
+          <li><a href="#contact" class="link">Contact</a></li>
+        </ul>
+        <button aria-label="Toggle theme">
+          <i aria-hidden="true" class="icon-normal fas fa-moon"></i>
+        </button>
+        <button aria-label="Toggle navbar">
+          <i aria-hidden="true" class="icon-normal fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+    <div class="hero">
+      <h1>Hi. I am <span class="hero-name">Hisamitsu Teru</span></h1>
+      <div class="hero-about">
+        <h2>Full Stack Web / Blockchain engineer</h2>
+        <p>
+          As a senior Web / Blockchain engineer, I provide the excellent
+          solution and clean codes.
+        </p>
+        <a class="resume" href="https://resume.io/r/lDHcsuAyn" target="_blank"
+          ><span class="btn">Resume</span></a
+        >
+      </div>
+    </div>
+    <section id="experience" class="experiences">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-container">
+        <div style="background-color: #13150d">
+          <a href="https://simone.jp/"><img src="logo_simone.svg" /></a>
+        </div>
+        <div>
+          <a href="https://www.robosoftin.com/"
+            ><img
+              src="https://d1y58d4vn5zi1a.cloudfront.net/Robosoft_logo_horizontal.svg"
+              width="300px"
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.digiryte.com/"
+            ><img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj4KICA8ZyBpZD0iR3JvdXBfNTcwNSIgZGF0YS1uYW1lPSJHcm91cCA1NzA1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOTQ0MyAxMTE2NSkiPgogICAgPGcgaWQ9Ikdyb3VwXzU3MDEiIGRhdGEtbmFtZT0iR3JvdXAgNTcwMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTQ0MyAtMTExNjUpIj4KICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZV8xNDAwIiBkYXRhLW5hbWU9IlJlY3RhbmdsZSAxNDAwIiB3aWR0aD0iNTIiIGhlaWdodD0iNTIiIGZpbGw9IiNkYjQ0MzUiLz4KICAgICAgPHBhdGggaWQ9IlVuaW9uXzkiIGRhdGEtbmFtZT0iVW5pb24gOSIgZD0iTTguNDksMzkuMDc4bDMuNC02LjUxNUw3Ljk3MSwyNS4zaDIuMzM1bDIuNjY1LDUuMTMxTDE1LjQ1NywyNS4zaDIuMjcybC02Ljk0MSwxMy43OFptMTYuNTc1LTkuNDM5YTQuNzE3LDQuNzE3LDAsMSwxLDkuNDMyLDAsNC45OTIsNC45OTIsMCwwLDEtLjAzNi42SDMyLjcyNnYtLjAwN0gyNi44MzVhMy4wMjUsMy4wMjUsMCwwLDAsMi45NDYsMi40ODYsMi45NjgsMi45NjgsMCwwLDAsMi4yNzktMS4wNzdoMi4wMTVhNC43MjgsNC43MjgsMCwwLDEtNC4yOTQsMi44MzRBNC43OCw0Ljc4LDAsMCwxLDI1LjA2NSwyOS42MzlabTEuODIyLS44MTRoNS43ODlhMi45ODMsMi45ODMsMCwwLDAtNS43ODksMFptLTYuMSw1LjR2LTdoLS44NTlWMjUuM2guODU5VjIyLjAyN0gyMi44VjI1LjNoLjg4MXYxLjkyNEgyMi44djdabS0xOS42NTcsMFYyNS4zSDMuMTR2LjU0MmEyLjk0NSwyLjk0NSwwLDAsMSwzLjE5Mi4wMjZ2MS4yNjdhMi45NDcsMi45NDcsMCwwLDAtMi4zODktLjAyMywyLjk4LDIuOTgsMCwwLDAtLjguNTE1djYuNlpNMjAuNzM1LDE5LjM2NkE0LjAxMyw0LjAxMywwLDAsMSwxOS4zODEsMTYuNmgyLjA0YTIuNDExLDIuNDExLDAsMCwwLC4zODgsMS4wMjYsMi4xNzEsMi4xNzEsMCwwLDAsMS44NDIuODQxLDIuMDE4LDIuMDE4LDAsMCwwLDEuNjczLS43LDMuMzQ3LDMuMzQ3LDAsMCwwLC41NTctMi4xdi0uNjc0YTQuNyw0LjcsMCwwLDEtMi44Ni45NjUsNC45MzQsNC45MzQsMCwwLDEsMC05Ljg2NSw0LjcsNC43LDAsMCwxLDIuODYuOTY1VjYuNDFoMi4wMzFWMTUuMmMwLC40Mi0uMDE0LjgtLjA0LDEuMTI0YTguMjI0LDguMjI0LDAsMCwxLS4xMTMuODU1LDMuODUzLDMuODUzLDAsMCwxLS44NDgsMS43NDgsNC4wODQsNC4wODQsMCwwLDEtMy4yNzcsMS40MDZBNC4zMjMsNC4zMjMsMCwwLDEsMjAuNzM1LDE5LjM2NlptLS42MTgtOC4zNDFhMi45MzUsMi45MzUsMCwxLDAsMi45MzYtMi45NzNBMi45NTgsMi45NTgsMCwwLDAsMjAuMTE4LDExLjAyNVpNMCwxMS4wMjVBNC44OCw0Ljg4LDAsMCwxLDQuODE1LDYuMDkyYTQuNyw0LjcsMCwwLDEsMi44LjkxNlYwSDkuNjUxVjE1LjYySDcuNjF2LS41NzlhNC43MDcsNC43MDcsMCwwLDEtMi44LjkxNkE0Ljg4LDQuODgsMCwwLDEsMCwxMS4wMjVabTEuOTEzLDBBMi45NDEsMi45NDEsMCwwLDAsNC44MTUsMTRhMi45NzQsMi45NzQsMCwwLDAsMC01Ljk0NkEyLjk0MSwyLjk0MSwwLDAsMCwxLjkxMywxMS4wMjVaTTMzLjgsMTUuNjJIMzEuNzdWNi4wNzhIMzMuOHY5LjU0MmgwWm0tMTguMjYxLDBoLTIuMDNWNi4wNzhIMTUuNTR2OS41NDJoMFpNMzMuNzUzLDQuMTM0SDMxLjdWMi4wM2gyLjA1NHYyLjFoMFptLTE4LjE2NiwwSDEzLjUzNFYyLjAzaDIuMDU0djIuMWgwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOC44NTYgNi41MzkpIiBmaWxsPSIjZmZmIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K"
+              height="160px"
+          /></a>
+        </div>
+      </div>
+      <div class="experience-container">
+        <div>
+          <a href="https://www.proton.org/"
+            ><img src="logo_proton.svg" height="160px"
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.elastos.org/"
+            ><img
+              src="https://avatars.githubusercontent.com/u/11608578?s=200&v=4"
+              height="160px"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <section id="project" class="project">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-container">
+        <img src="project_pasarprotocol.png" alt="Blue Sparrows" width="450px" />
+        <div class="project-content">
+          <h3>Pasar Protocol</h3>
+          <p>
+            As a Blockchain and FrontEnd developer, have developed the NFT
+            Contrct with ERC1155 and the frontend with React.js and Web3.js
+          </p>
+          <ul class="project-skill">
+            <li>Solidity</li>
+            <li>React.js</li>
+            <li>Web3.js</li>
+            <li>Minimal</li>
+			<li>Elastos Essentials</li>
+            <li>MetaMask</li>
+          </ul>
+          <ul class="project-link">
+            <li>
+              <a
+                href="https://pasarprotocol.io/"
+                aria-label="Preview"
+                target="_blank"
+                title="preview"
+                rel="noopener"
+                ><i
+                  aria-hidden="true"
+                  class="icon-border fas fa-external-link-alt"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-container">
+        <img src="project_meteast.png" alt="Blue Sparrows" width="450px" />
+        <div class="project-content">
+          <h3>MetEast</h3>
+          <p>
+            As a Blockchain and FrontEnd developer, have developed the NFT
+            Contrct with ERC721, Tokenomics Contract with ERC20 and the frontend
+            with React.js, Typescript and Web3.js
+          </p>
+          <ul class="project-skill">
+            <li>Solidity</li>
+			<li>Hardhat</li>
+            <li>Typescript</li>
+            <li>React.js</li>
+            <li>Web3.js</li>
+            <li>Minimal</li>
+			<li>Elastos Essentials</li>
+            <li>MetaMask</li>
+          </ul>
+          <ul class="project-link">
+            <li>
+              <a
+                href="https://meteast.io/"
+                aria-label="Preview"
+                target="_blank"
+                title="preview"
+                rel="noopener"
+                ><i
+                  aria-hidden="true"
+                  class="icon-border fas fa-external-link-alt"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-container">
+        <img src="652f4454f7142dad582b.png" alt="Theoan" />
+        <div class="project-content">
+          <h3>Theoan</h3>
+          <p>This is wallet site to use aion coin.</p>
+          <ul class="project-skill">
+            <li>BlockChain</li>
+            <li>Crypto Wallet</li>
+            <li>React Native</li>
+            <li>Smart Contract</li>
+          </ul>
+          <ul class="project-link">
+            <li>
+              <a
+                href="https://aion.theoan.com/"
+                aria-label="Preview"
+                target="_blank"
+                title="preview"
+                rel="noopener"
+                ><i
+                  aria-hidden="true"
+                  class="icon-border fas fa-external-link-alt"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-container">
+        <img src="2af88a41a4984020eced.png" alt="Blue Sparrows" />
+        <div class="project-content">
+          <h3>Blue Sparrows</h3>
+          <p>
+            Having worked as a MERN stack developer, I have contributed the full
+            of frontend development and some parts of backend development.
+          </p>
+          <ul class="project-skill">
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Redux</li>
+            <li>Node.js</li>
+            <li>Webpack</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>MongoDB</li>
+            <li>AWS</li>
+          </ul>
+          <ul class="project-link">
+            <li>
+              <a
+                href="http://bluesparrows.com/"
+                aria-label="Preview"
+                target="_blank"
+                title="preview"
+                rel="noopener"
+                ><i
+                  aria-hidden="true"
+                  class="icon-border fas fa-external-link-alt"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-container">
+        <img src="dea9b9c0291ec8ff841b.png" alt="enuggetlearning" />
+        <div class="project-content">
+          <h3>Enuggetlearning</h3>
+          <p>
+            This is an international award-winning instructional design and
+            learning company site that offers flexible training solutions in a
+            game-like environment.
+          </p>
+          <ul class="project-skill">
+            <li>PHP</li>
+            <li>CSS</li>
+            <li>Docker</li>
+          </ul>
+          <ul class="project-link">
+            <li>
+              <a
+                href="https://enuggetlearning.com/"
+                aria-label="Preview"
+                target="_blank"
+                title="preview"
+                rel="noopener"
+                ><i
+                  aria-hidden="true"
+                  class="icon-border fas fa-external-link-alt"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="stack" class="stack">
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="stack-container">
+        <div class="tech-container">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAb9QTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////abHWxQAAAJR0Uk5TAAIUGBEBL66wr4gXBIzkzcjJv59TPNXWx8apmYohDKXm4+HOuJtmBVDd2sSYmpIstOLQcQptwqGXIsHl0nwSA4Ley76eTjHRqxoJluC8nVtH2YaHfh9Bz4sWEwgHzLcru3QercpYYKOgSFcpRMUkeZPANzV4OpBGKklaWawdIHMuuYXY34F7sUCzptxMZ6Sq19RVLXZgGSgAAAABYktHRJR/Z0oVAAAACXBIWXMAAOw4AADsOAFxK8o4AAACdElEQVRIx72W61/SUBjHDwmFE7dBoaOTyhjTUIaoqKVLzGsKahE4QUlLS7LSzO5Zavf79R+OeXaOvBhne9Gn36u9+H337DznuQyA/y7HsZoKOV2WwPET7loiN1Nn5ffUsxzvxfKdPGUVwt/ANgpYgdPwTBPd39wSFEOS4efDMpRb26jA2Qgriu08AjpaolCJddL8dfGgKIpd3QiIKxBCuSdBAXrFQ0W8ur+vH+o656/uPz8wiAhVB9yHfihfGKrmTw4bfvHiiCCMjiEAKuPVUjsxyRqA2CAIl6IYYKbM/dOpIPaLaWlmVsGS55KmwOUroTRWSE1lrmIx2ZwpMM9rROpCfuhIhUVTYGlYKhriri0DG1pe4QxA6rXjB47rRgipNmcLADdWEbF2054fgFsowDq5W4+DDhRKWvnEgdvkIzfuWIS4e48ragzJ4mZ4K0kHEvc1bvsB+aAtbXTHIsSOT3tIXvpogNNiCTqQzIY38fP0Y618oCcWIZ5ukMQ8C5RTppUKdMDhwU9D6+hWngOberGGbmX3pT3/KzculD2HHb9rD9cut2KrdPcPcOkWpddLppbFQkXP5OvVo3bizSdNLsuQrsyk1Ip+fTNvCiTnZNL3szNcmkyEYMy8RcEUoxiTJborCI3Yz05OVEvMOAbGfLww8tYABt9VrVjnexkBH/RRqRr+bcqK+IimXX+fDngjiGilJD/Ro4dQ4mjcd3fpJ/6Up11XZ0yB0c8dxgZqL5/4y1fq/bZ9K2+pA2MDCVJIDH5vpldE0wL8ESBb8Sf7y0/3A9fvko9sXZ5jMxZDAIAapnKxr/6x8gOXs/LXoWCrFf6t/gLoZJ5ESnjnqAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMC0wMS0xMFQxNjozNzo1NSswMDowMADUT/kAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjAtMDEtMTBUMTY6Mzc6NTUrMDA6MDBxifdFAAAARnRFWHRzb2Z0d2FyZQBJbWFnZU1hZ2ljayA2LjcuOC05IDIwMTktMDItMDEgUTE2IGh0dHA6Ly93d3cuaW1hZ2VtYWdpY2sub3JnQXviyAAAABh0RVh0VGh1bWI6OkRvY3VtZW50OjpQYWdlcwAxp/+7LwAAABh0RVh0VGh1bWI6OkltYWdlOjpoZWlnaHQANTEywNBQUQAAABd0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAA1MTIcfAPcAAAAGXRFWHRUaHVtYjo6TWltZXR5cGUAaW1hZ2UvcG5nP7JWTgAAABd0RVh0VGh1bWI6Ok1UaW1lADE1Nzg2NzQyNzXVHBqkAAAAE3RFWHRUaHVtYjo6U2l6ZQAxMS41S0JCbu/pLgAAAFR0RVh0VGh1bWI6OlVSSQBmaWxlOi8vLi91cGxvYWRzLzU2LzhidnMzYVYvMjEwNy9maWxlX3R5cGVfbGlnaHRfc29saWRpdHlfaWNvbl8xMzA0MzYucG5nkpqaWgAAAABJRU5ErkJggg=="
+            style="margin-bottom: 0.5em"
+          />
+          Solidity
+        </div>
+        <div class="tech-container">
+          <img
+            src="data:image/png;base64,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"
+            style="margin-bottom: 0.5em"
+          />
+          Bitcoin
+        </div>
+        <div class="tech-container">
+          <img
+            src="data:image/png;base64,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"
+            style="margin-bottom: 0.5em"
+          />
+          Ethereum
+        </div>
+        <div class="tech-container">
+          <i class="devicon-react-original colored"></i> React.js
+        </div>
+        <div class="tech-container">
+          <i class="devicon-redux-original colored"></i> Redux
+        </div>
+		<div class="tech-container">
+			<i class="devicon-typescript-original colored"></i> Typescript
+		  </div>
+        <div class="tech-container">
+          <i class="devicon-webpack-plain colored"></i> Webpack
+        </div>
+        <div class="tech-container">
+          <i class="devicon-nodejs-plain colored"></i> Node.js
+        </div>
+        <div class="tech-container">
+          <i class="devicon-express-original colored"></i> Express.js
+        </div>
+        <div class="tech-container">
+          <i class="devicon-mongodb-plain colored"></i> MongoDB
+        </div>
+        <div class="tech-container">
+          <i class="devicon-git-plain colored"></i> Git
+        </div>
+        <div class="tech-container">
+          <i class="devicon-linux-plain"></i> Linux
+        </div>
+        <div class="tech-container">
+          <i class="devicon-docker-plain colored"></i> Docker
+        </div>
+        <div class="tech-container">
+          <i class="devicon-vim-plain colored"></i> Vim
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h2 class="section-title">Get in touch</h2>
+      <ul>
+        <li>
+          <a href="mailto:hisamitsuteru@gmail.com"
+            ><span class="btn"
+              ><i aria-hidden="true" class="fas icon fa-envelope"></i
+              >Email</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/blockchaindev91" aria-label="Github"
+            ><span class="btn"
+              ><i aria-hidden="true" class="fab icon fa-github"></i>
+              Github</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href="https://t.me/teru12345" aria-label="telegram"
+            ><span class="btn"
+              ><i aria-hidden="true" class="fab icon fa-telegram"></i>
+              Telegram</span
+            ></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://discordapp.com/users/947880293665234966"
+            aria-label="discord"
+            ><span class="btn"
+              ><i aria-hidden="true" class="fab icon fa-discord"></i>
+              Discord</span
+            ></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/hisamitsu-teru-110744233"
+            aria-label="linkedin"
+            ><span class="btn"
+              ><i aria-hidden="true" class="fab icon fa-linkedin"></i>
+              Linkedin</span
+            ></a
+          >
+        </li>
+      </ul>
+    </section>
+    <footer><small>&copy; 2022 Hisamitsu Teru</small></footer>
+    <div class="scroll-container">
+      <div aria-label="Scroll up" class="scroll-up">
+        <a href="#top"><i aria-hidden="true" class="fas fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </body>
+</html>
